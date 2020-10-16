@@ -1,0 +1,66 @@
+html,
+body,
+#map {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+#sidebar {
+  margin-left: 6vh;
+  margin-right: 3vh;
+}
+
+.sidebar-container {
+  position: relative;
+  box-sizing: border-box;
+  overflow: auto;
+  padding: 1vh;
+  width: 45vh;
+  height: 100vh;
+  background-color: rgba(173, 177, 170, 0.9);
+  text-align: justify;
+  float: right;
+  z-index: 900;
+  cursor: auto;
+}
+
+.move {
+  margin-right: 45vh;
+}
+
+.arrow-right {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  position: fixed;
+  text-align: center;
+  width: 5vh;
+  border: 1px solid rgba(120, 121, 131, 0.836);
+  border-radius: 4px;
+  background-color: rgba(240, 239, 239, 0.623);
+  cursor: pointer;
+  margin: 5hv;
+}
+
+@keyframes move-right {
+  from {
+    right: 0vh;
+  }
+  to {
+    right: -38vh;
+  }
+}
+.close {
+  animation: move-right 1s forwards;
+}
+
+@keyframes move-left {
+  from {
+    right: -45vh;
+  }
+  to {
+    right: 0vh;
+  }
+}
+.open {
+  animation: move-left 1s forwards;
+}
